@@ -1,0 +1,62 @@
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.section1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+.main-title {
+  font-size: 100px;
+}
+
+.second-title {
+  font-size: 50px;
+}
+.third-title {
+  color: #7f7f7f;
+}
+.inline {
+  display: inline-block;
+}
+img {
+width: 75%;
+margin: 10px;
+border-radius: 5%;
+}
+
+.section2-1{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  border: red solid;
+}
+
+.section3 {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+button {
+  background-color: #e8e5e480;
+  border-radius: 10%;
+  border: none;
+  padding: 5px 15px;
+  font-family: "Tenor Sans", sans-serif;
+}
