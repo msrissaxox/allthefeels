@@ -7,16 +7,36 @@
 
 html {
   font-family: "Tenor Sans", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bad4aa;
+  z-index: 2;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
 }
 
 .section1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   height: 100vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 30px;
+  margin: 70px;
 }
 .main-title {
   font-size: 100px;
@@ -32,7 +52,7 @@ html {
   display: inline-block;
 }
 img {
-width: 75%;
+width: 70%;
 margin: 10px;
 border-radius: 5%;
 }
@@ -42,7 +62,6 @@ border-radius: 5%;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  border: red solid;
 }
 
 .section3 {

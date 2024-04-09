@@ -8,18 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css"/>
 <link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-<link rel="stylesheet" href="styles.css">
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
+
 <body>
     <!--Nav Bar Section Here-->
-    <div></div>
+<section>
+    <nav class="nav-bar">
+        <ul>
+            <li>home</li>
+            <li><a href="#inspo">inspo</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>    
+    </nav>
+</section>    
+
+
 
     <section class="section1">
-        <h1 class="main-title animate__fadeInUp">all the feels.</h1>
+        <h1 class="main-title animate__animated animate__fadeInDown">all the feels.</h1>
         <h2 class="second-title">Transform your balcony, rooftop, or windowsill into a thriving urban garden. </h2>
             
         <div>
@@ -31,20 +43,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     </section>
 
 
-    <section class="section2-1">
-        <img src="./assets/plant1.jpg" loading="lazy">
-        <img src="./assets/plant2.jpg" loading="lazy">
-        <img src="./assets/plant3.jpg" loading="lazy">
-        <img src="./assets/plant4.jpg" loading="lazy">
-        <img src="./assets/plant7.jpg" loading="lazy">
-        <img src="./assets/plant6.jpg" loading="lazy">
+    <section class="section2-1" id="inspo">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/581/original/pexels-cottonbro-studio-4505447.jpg?1712698276" loading="lazy">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/584/original/pexels-cottonbro-studio-4507268.jpg?1712698332" loading="lazy">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/585/original/pexels-daria-obymaha-1684004.jpg?1712698372" loading="lazy">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/586/original/pexels-lexi-lauwers-2921090.jpg?1712698404" loading="lazy">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/587/original/pexels-valeria-boltneva-827518.jpg?1712698440" loading="lazy">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/589/original/pexels-scott-webb-212942.jpg?1712698487" loading="lazy">
         
     </section>
 
+    <section>
+        <p>Urban gardens are more than just splashes of color 
+        amidst the concrete jungle. These strategically placed 
+        green spaces act as vital lungs for our cities, 
+        improving air quality and reducing the urban heat island 
+        effect. They also foster a sense of community, providing 
+        residents with a shared space to connect with nature and 
+        their neighbors.  This collaborative environment fosters 
+        a spirit of environmental stewardship, making urban gardens 
+        a valuable asset to any city's social and ecological 
+        well-being.</p>
+    </section>
 
     <section class="section3">
         <h2 class="second-title">Work with us.</h2>
-        <h2 class="third-title">Get in touch.</h2>
+        <h2 class="third-title" id="#contact">Get in touch.</h2>
     </section>
        
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -52,7 +76,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+          <span class="mb-3 mb-md-0 text-body-secondary">©2024 Marissa Lamothe, Urban Garden Challenge SheCodes</span>
         </div>
     
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -63,5 +87,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       </footer>
      
     <script src="myscript.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
