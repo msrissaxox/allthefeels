@@ -105,7 +105,7 @@ height: auto;
     }
     
     .right-bottom::before,
-    .right -bottom::after {
+    .right-bottom::after {
        bottom: var(--offset);
       right: var (--offset);
     }
