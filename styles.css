@@ -1,6 +1,4 @@
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -9,19 +7,21 @@ html {
   font-family: "Tenor Sans", sans-serif;
     scroll-behavior: smooth;
   }
-a {
+
+  a {
   text-decoration: none;
   color: #000000;
 }
+
 .nav-bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #bad4aa;
-
+  background-color: #bad4aac1;
   z-index: 2;
 }
+
 .nav-bar ul {
   list-style: none;
   display: flex;
@@ -33,15 +33,13 @@ a {
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 100vh;
-  
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 70px;
+  height: 80vh;
 }
+
 .main-title {
   font-size: 100px;
 }
@@ -49,9 +47,28 @@ a {
 .second-title {
   font-size: 50px;
 }
+
 .third-title {
   color: #7f7f7f;
 }
+
+.btn_1 {
+  background-color: #92a586;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 6px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 5px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn_1:hover {
+  opacity: 1;
+}
+
 .inline {
   display: inline-block;
 }
