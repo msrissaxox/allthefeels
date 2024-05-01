@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -8,7 +7,7 @@ html {
     scroll-behavior: smooth;
   }
 
-  a {
+a {
   text-decoration: none;
   color: #000000;
 }
@@ -36,8 +35,7 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 70px;
-  height: 80vh;
+  height: 100vh;
 }
 
 .main-title {
@@ -50,6 +48,10 @@ html {
 
 .third-title {
   color: #7f7f7f;
+}
+
+.section2-1 {
+  border: solid red 5px;
 }
 
 .btn_1 {
@@ -67,143 +69,117 @@ html {
 
 .btn_1:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .inline {
   display: inline-block;
 }
+
+.additional-menu {
+  margin-top: 100px;
+}
+
 img {
-border-radius: 5%;
-max-width: 85%;
-height: auto;
+  max-width: 85%;
+  height: auto;
 }
 
 .cards { 
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 0.5rem; 
-  margin-top: 16rem; 
-  max-width: 50rem;
   justify-content: center;
+  align-items: center;
+  width: 70vw;
+  padding: 10px;
+  border: solid 10px black;
+  overflow: hidden;
 }
-  .card {
+
+.card {
   position: relative; 
   overflow: hidden;
-  max-width: 18rem;
-  width: 100%;
+  max-width: 350px;
+  max-height: 350px;
   color: #fff;
   background: #000;
   cursor: pointer;
   transition: all 0.3s ease;
-  }
+}
 
-  .card img { 
-    max-width: 100%;
-    object-fit: cover;
-    backface-visibility: hidden;
-    vertical-align: top;
-    transition: all 0.3s ease;
-  }
+.card img { 
+  max-width: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  vertical-align: top;
+  transition: all 0.3s ease;
+}
 
-    .corner::before,
-    .corner::after {
-    position: absolute;
-    content: '';
-    background: #fff; 
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.4s ease;
-    }
+.card figcaption { 
+  position: absolute;
+  text-align: center; 
+  top: 50%; 
+  left: 50%; 
+  max-width: 20rem;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
 
-    right-top::before,
-    .right-top::after {
-      top: var (--offset);
-      right: var (--offset);
-    }
+.card h3 { 
+  font-size: 1.1rem;
+  font-weight: bold;
+  opacity: 0; 
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.4s ease;
+}
+
+.card p { 
+  opacity: 0;
+  font-size: 0.8rem;
+  transition: all 0.4s ease;
+}
     
-    .right-bottom::before,
-    .right-bottom::after {
-       bottom: var(--offset);
-      right: var (--offset);
-    }
+.card:hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  opacity: 0.3;
+}
 
-    .corner::before {
-      width: 0;
-      height: 1px;
-    }
+.card:hover .corner::before { 
+  width: 40px; 
+  opacity: 1;
+  transition-delay: 0.2s;
+}
 
-    .corner::after {
-      height: 0;
-      width: 1px;
-    }
+.card:hover .corner::after { 
+  height: 40px; 
+  opacity: 1;
+  transition-delay: 0.2s;
+}
 
-    .card figcaption { 
-      position: absolute;
-      text-align: center; 
-      top: 50%; 
-      left: 50%; 
-      max-width: 20rem;
-      width: 100%;
-      transform: translate(-50%, -50%);
-    }
+.card:hover h3 { 
+  opacity: 1;
+  transition-delay: 0.3s;
+}
 
-    .card h3 { 
-      font-size: 1.1rem;
-      font-weight: bold;
-      opacity: 0; 
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.1rem;
-      transition: all 0.4s ease;
-    }
-
-    .card p { 
-      opacity: 0;
-      font-size: 0.8rem;
-      transition: all 0.4s ease;
-    }
-    .card:hover img {
-      zoom: 1;
-      filter: alpha(opacity=20);
-      opacity: 0.3;
-    }
-    .card:hover .corner::before { 
-      width: 40px; 
-      opacity: 1;
-      transition-delay: 0.2s;
-    }
-    .card:hover .corner::after { 
-      height: 40px; 
-      opacity: 1;
-      transition-delay: 0.2s;
-    }
-
-    .card:hover h3 { 
-      opacity: 1;
-      transition-delay: 0.3s;
-    }
-
-    .card:hover p { 
-      opacity: 1;
-      transition-delay: 0.35s;
-    }
-
-
-
-
-
+.card:hover p { 
+  opacity: 1;
+  transition-delay: 0.35s;
+}
 
 .section2-1{
-display: grid;
-width: 75%;
-margin: 0 auto;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-row-gap: 70px;
-/*center items*/
-justify-content: space-evenly;
-justify-items: center;
-align-content: space-evenly;
-align-items: center;
+  display: grid;
+  width: 75%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 70px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
 }
 
 .grid-image {
@@ -212,26 +188,43 @@ align-items: center;
   align-self: center;
 }
 
-
-.paragraph{
+.paragraph {
   margin: 50px auto;
-  border: double #52796f;
+  border-radius: 1%;
   height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 75%;
   font-size: 30px;
-  padding: 30px;
+  padding: 30px 70px;
+  background-color: -webkit-box-shadow: 0px 0px 11px 0px rgba(52,55,53,0.48); 
+  box-shadow: 0px 0px 11px 0px rgba(52,55,53,0.48);
 }
+
+.container {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px, 50px;
+  grid-gap: 5px;
+  height: 200vh;
+}
+
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .section3 {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 30px;
+  height: 50vh;
 }
+
 button {
   background-color: #e8e5e480;
   border-radius: 10%;
@@ -240,23 +233,47 @@ button {
   font-family: "Tenor Sans", sans-serif;
 }
 
-span:hover {
-  text-decoration: underline;
-  cursor: pointer;
+span {
+/* Additional styling */
+  color: #7f7f7f;
+	position: relative;
+	outline: none !important;
+	transition: 0.2s;
+}
+
+span::after {
+	content: "";
+	background-color: #7f7f7f;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0;
+	transition: 0.5s;
+}
+
+span:hover,
+span:focus {
+	color: #7f7f7f;
+}
+
+span:hover::after,
+span:focus::after {
+	background-color: #7f7f7f;
+	width: 100%;
 }
 
 footer {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   bottom: 0;
 }
 
 footer ul {
   list-style: none;
-  
 }
 
-@media only screen and (min-width: 640px){
+/* @media only screen and (min-width: 640px){
   .grid-image {
     flex-basis: 50%;
   }
