@@ -194,32 +194,32 @@ img {
 }
 
 .flex-1 {
-  display: flex;
-  width: 100vw;
+  display: flex; 
   justify-content: center;
+  width: 100vw;
 }
+
 .paragraph {
   border-radius: .6%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 90vh;
+  width: 75%;
+  height: 75vh;
   font-size: 25px;
   padding: 20px 40px;
-  grid-gap: 10px;
+
   background-color: 0px 0px 11px 0px rgba(52,55,53,0.48); 
   box-shadow: 0px 0px 11px 0px rgba(52,55,53,0.48);
   margin: 70px 50px;
 }
 
 .card2 {
-    width: 600px;
+    width: 350px;
     height: 500px;
     background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/163/original/pexels-brotherkehn-3849167.jpg?1714595090") no-repeat;
     background-size: contain;
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,8 +227,13 @@ img {
     transition: 0.3s;
 }
 
+.whyurban h2 {
+  margin-bottom: 50px;
+}
+
+
 .card2:hover {
-  width: 600px;
+  width: 350px;
   height: 500px;
   background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/164/original/pexels-luke-webb-1336561-2752951.jpg?1714595100") no-repeat;
   background-size: contain;
@@ -253,19 +258,23 @@ img {
 
 .membership_section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 75%; 
+  align-content: center;
+  margin: 0 auto;
+  column-gap: 50px;
 }
 
 .member {
   height: 400px;
   width: 250px;
   border-radius: 0 0 5% 5%;
-  margin: 50px;
+  margin: 0 150px;
   -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32); 
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32);
   margin: 15px;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 25px;
 } 
 
 .member h1{
