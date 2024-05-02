@@ -36,26 +36,32 @@ a {
   align-items: center;
   text-align: center;
   height: 100vh;
+  background-color: #f0f0f0;
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/265/original/pexels-visualsbysade-1042177.jpg?1714651723") rgba(0, 0, 0, 0.5) no-repeat fixed; /* Optional: prevent repeating image */
+  background-size: cover;
 }
 
 .main-title {
   font-size: 100px;
+  color: #ffb703;
 }
 
 .second-title {
   font-size: 50px;
+  color: #ffb703;
 }
 
 .third-title {
-  color: #7f7f7f;
+  color: #ffb703;
 }
 
 .section2-1 {
   display: grid;
   width: 100%;
-  margin: 0 auto;
+  margin: 100px 0px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+
   /* justify-content: space-evenly; */
   justify-items: center;
   align-content: space-evenly;
@@ -183,32 +189,42 @@ img {
   align-self: center;
 }
 
+.flex-1 {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
 .paragraph {
-  border-radius: 1%;
+  border-radius: .6%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 100vh;
+  width: 80%;
+  height: 90vh;
   font-size: 30px;
-  padding: 30px 70px;
+  padding: 20px 40px;
+  grid-gap: 10px;
   background-color: 0px 0px 11px 0px rgba(52,55,53,0.48); 
   box-shadow: 0px 0px 11px 0px rgba(52,55,53,0.48);
-  margin: 50px;
+  margin: 70px 50px;
 }
 
 .card2 {
     width: 500px;
-    height: 400px;
+    height: 600px;
     background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/163/original/pexels-brotherkehn-3849167.jpg?1714595090") no-repeat;
     background-size: contain;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .card2:hover {
   width: 500px;
-  height: 400px;
+  height: 600px;
   background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/164/original/pexels-luke-webb-1336561-2752951.jpg?1714595100") no-repeat;
   background-size: contain;
 }
@@ -220,13 +236,18 @@ img {
   grid-template-rows: 50px, 50px;
   grid-gap: 5px;
   height: 200vh;
+
+  justify-content: center;
 }
 
 .container > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .section3 {
   display: flex;
