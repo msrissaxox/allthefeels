@@ -265,10 +265,12 @@ img {
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32);
   margin: 15px;
   text-align: center;
+  padding: 0 20px;
 } 
 
 .member h1{
   background-color: #ffb80359;
+  width: 100%;
 }
 
 .member:hover h1{
@@ -282,11 +284,20 @@ img {
 
 
 .member:hover {
-  transform: scale(1.01);
-  transform: translate(0px, -25px);
-  transition: all 0.8 ease;
+  transform: translateY(-25px); 
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
   -webkit-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32); 
-box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32);
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32);
+}
+
+.memberbutton {
+  margin: 25px 0;
+}
+
+.memberbutton:hover {
+  transform: scale(1.1);
+  background-color: #ffb703;
+  transition: transform 0.8s cubic-bezier(.24,.29,.44,.14);
 }
 
 .section3 {
