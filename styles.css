@@ -360,14 +360,74 @@ footer {
   display: flex;
   justify-content: space-between;
   bottom: 0;
+  margin: 5px;
 }
 
 footer ul {
   list-style: none;
 }
-
-/* @media only screen and (min-width: 640px){
-  .grid-image {
-    flex-basis: 50%;
+/*Tablet View*/
+@media (min-width: 481px) and (max-width: 1200px){
+  .second-title {
+    margin: 0px 10px;
+    font-size: 40px;
   }
+.paragraph {
+  height: 50vh;
 }
+
+.section2-1 {
+  display: grid;
+  width: 100%;
+  margin: 200px 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* justify-content: space-evenly; */
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+max-width: 250px;
+}
+.flex-1 {
+  margin-bottom: 200px;
+}
+
+.whyurban p {
+    font-size: 18.5px;
+  }
+.card2 {
+  max-width: 300px;
+}
+
+.membership_section {
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  }
+
+.member {
+  width: 300px;
+}
+.membercard {
+  font-size: 15px;
+  margin: 0;
+}
+.section3 {
+  height: 40vh;
+}
+
+/* mobile*/
+  @media (min-width: 319px) and (max-width: 480px) {
+    .second-title {
+      margin: 0px 10px;
+      font-size: 20px;
+    }
+    .whyurban p {
+      font-size: 15px;
+    }
+  }
