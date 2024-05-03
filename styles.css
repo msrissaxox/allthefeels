@@ -373,10 +373,10 @@ footer ul {
     font-size: 40px;
   }
 
-.paragraph {
+.flex-1 {
 display: flex;
-flex-direction: column;
 align-items: center;
+margin-bottom: 150px;
 }
 
 .section2-1 {
@@ -408,6 +408,7 @@ max-width: 250px;
 .whyurban p {
     font-size: 15.5px;
     text-align: center;
+    padding: 10px;
   }
 .card2 {
   justify-content: center;
@@ -431,16 +432,17 @@ max-width: 250px;
   height: 40vh;
 }
 
-/* mobile*/
-  @media (min-width: 319px) and (max-width: 480px) {
-    .nav-bar {
-      display: hidden;
-    }
-    .second-title {
-      margin: 0px 10px;
-      font-size: 20px;
-    }
-    .whyurban p {
-      font-size: 15px;
-    }
+
+
+/* smaller tablet*/
+  @media (min-width: 600px) and (max-width: 999px) {
+   .card {
+    max-width: 250px;
+    max-height: 350px;
+   }
+   .card img { 
+    max-width: 80%;
   }
+
+
+}
