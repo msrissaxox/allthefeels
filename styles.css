@@ -207,7 +207,7 @@ img {
   align-items: center;
   width: 75%;
   height: 75vh;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px 40px;
 
   background-color: 0px 0px 11px 0px rgba(52,55,53,0.48); 
@@ -367,13 +367,16 @@ footer ul {
   list-style: none;
 }
 /*Tablet View*/
-@media (min-width: 481px) and (max-width: 1200px){
+@media (min-width: 1000px) and (max-width: 1200px){
   .second-title {
     margin: 0px 10px;
     font-size: 40px;
   }
+
 .paragraph {
-  height: 50vh;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .section2-1 {
@@ -391,17 +394,24 @@ footer ul {
 .card {
 max-width: 250px;
 }
-.flex-1 {
-  margin-bottom: 200px;
+
+
+.paragraph {
+  padding-bottom: 50px;
+}
+
+.whyurban h2 {
+  text-align: center;
+  margin-top: 50px;
 }
 
 .whyurban p {
-    font-size: 18.5px;
+    font-size: 15.5px;
+    text-align: center;
   }
 .card2 {
-  max-width: 300px;
+  justify-content: center;
 }
-
 .membership_section {
   width: 90%;
   justify-content: center;
@@ -423,6 +433,9 @@ max-width: 250px;
 
 /* mobile*/
   @media (min-width: 319px) and (max-width: 480px) {
+    .nav-bar {
+      display: hidden;
+    }
     .second-title {
       margin: 0px 10px;
       font-size: 20px;
