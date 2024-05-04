@@ -13,6 +13,11 @@ a {
   color: #000000;
 }
 
+
+.topnav {
+  display: none;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -275,7 +280,8 @@ img {
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.32);
   margin: 15px;
   text-align: center;
-  padding: 0 25px;
+  padding: 0px 25px 20px;
+  font-size: 15px;
 } 
 
 .member h1{
@@ -378,10 +384,14 @@ footer ul {
     font-size: 40px;
   }
 
+.topnav {
+  display: none;
+}
+
 .flex-1 {
-display: flex;
-align-items: center;
-margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
 }
 
 .section2-1 {
@@ -397,7 +407,7 @@ margin-bottom: 150px;
 }
 
 .card {
-max-width: 250px;
+  max-width: 250px;
 }
 
 
@@ -411,13 +421,14 @@ max-width: 250px;
 }
 
 .whyurban p {
-    font-size: 15.5px;
-    text-align: center;
-    padding: 10px;
-  }
+  font-size: 15.5px;
+  text-align: center;
+  padding: 10px;
+}
 .card2 {
   justify-content: center;
 }
+
 .membership_section {
   width: 90%;
   justify-content: center;
@@ -428,26 +439,30 @@ max-width: 250px;
 
 .member {
   width: 300px;
+  font-size: 15px;
 }
+
 .membercard {
   font-size: 25px;
   margin: 15px;
 }
+
 .memberbutton {
-font-size: 13px;
+  font-size: 13px;
 }
 .section3 {
   height: 40vh;
 }
-
 }
 
 /* smaller tablet*/
 @media (min-width: 750px) and (max-width: 999px) {
 
-  .nav-bar {
+.nav-bar {
   display: none;
 }
+
+
 
 .card {
   max-width: 250px;
@@ -505,6 +520,8 @@ font-size: 13px;
 .member {
   min-width: 350px;
   margin: 25px;
+  padding: 20px;
+  font-size: 14px;
 }
 .memberbutton {
   font-size: 15px;
@@ -516,9 +533,7 @@ footer {
 }
 /*MOBILE RESPONSIVENESS*/
 @media (max-width: 749px){
-.card2 {
-  border: solid red 5px;
-}
+
 .nav-bar {
   display: none;
 }
@@ -550,4 +565,110 @@ footer {
   max-width: 100%;
 }
 
+.flex-1 {
+  height: 900px;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 800px;
+}
+.whyurban p {
+  font-size: 18px;
+}
+.whyurban p, h2 {
+  text-align: center;
+}
+.card2 {
+  max-width: 200px;
+  min-height: 200px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: 0.3s;
+  border-radius: 5%;
+  margin: 50px 0;
+}
+
+.card2:hover{
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+}
+
+.membership_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.member {
+  min-width: 250px;
+  margin: 25px;
+  padding: 10px;
+}
+.memberbutton {
+  font-size: 12px;
+  margin: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-family: "Tenor Sans", sans-serif;
+  }
+  
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #bad4aac1;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a.icon {
+    float: right;
+  }
+  
+  .topnav a:hover {
+    background-color: #bad4aac1;
+    color: black;
+  }
+  
+  .active {
+    background-color: #9fb392;
+    color: black;
+  }
+  
+  .topnav {
+      display: flex; /* Change display to flex for mobile view */
+      justify-content: space-between; /* Space between elements */
+      align-items: center; /* Align vertically */
+      /* background-color: #bad4aac1; Set background color */
+      padding: 10px; /* Add padding for mobile view */
+      color: black;
+    }
+    
+    .nav-bar {
+      display: none; /* Hide desktop navigation on mobile */
+    }
+  
+  }
 }

@@ -12,10 +12,19 @@
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="./output.css" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
 </head>
 
 <body>
@@ -30,6 +39,21 @@
         </ul>    
     </nav>
 </section>    
+
+<!-- Top Navigation Menu for mobile-->
+<div class="topnav">
+  <a href="#home" class="active">All the Feels</a>
+  <div id="myLinks">
+    <a href="#index">Home</a>
+    <a href="#inspo">Inspo</a>
+    <a href="#connect">Connect</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <span class="material-symbols-outlined">
+      menu
+      </span>
+  </a>
+</div>
 
     <section class="section1">
       <h1 class="main-title animate__animated animate__fadeInDown">all the feels.</h1>
@@ -114,7 +138,7 @@
 <section class="membership_section">
   <div class="member1 member"><h1>Tier 1</h1><p class="membercard">Community Contributions</p><p>Give a little, get a lot! Learn how your contributions of time, skills, or resources can help our urban garden flourish and nourish our community.</p><button class="memberbutton">Click here to contribute</button></div>
   <div class="member2 member"><h1>Tier 2</h1><p class="membercard">Community Outreach</p><p>Sprouting connections! Discover how our urban garden is reaching out to the community, promoting healthy living and environmental education through workshops, events, and partnerships.</p><button class="memberbutton">Click here to volunteer</button></div>
-  <div class="member3 member"><h1>Tier 3</h1><p class="membercard">Nationwide Outreach</p><p>From our plot to your plate! See how our urban garden is going national, inspiring and connecting communities across the country through shared resources, virtual workshops, and a network of urban agriculture champions.</p><button class="memberbutton">Click here to volunteer</button></div>
+  <div class="member3 member"><h1>Tier 3</h1><p class="membercard">Nationwide Outreach</p><p>From our plot to your plate! See how our urban garden is going national, connecting communities across the country through shared resources, virtual workshops, and a network of urban agriculture champions.</p><button class="memberbutton">Click here to volunteer</button></div>
 
 </section>
     <!-- <section class="container">
@@ -170,5 +194,7 @@
       -->
     <script src="myscript.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</body>
+  
+
+  </body>
 </html>
