@@ -41,6 +41,8 @@ a {
   background-color: #f0f0f0;
   background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/265/original/pexels-visualsbysade-1042177.jpg?1714651723") rgba(0, 0, 0, 0.5) no-repeat fixed; /* Optional: prevent repeating image */
   background-size: cover;
+  /* width: 100vw; */
+  background-position: center;
 }
 
 .main-title {
@@ -196,7 +198,7 @@ img {
 .flex-1 {
   display: flex; 
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .paragraph {
@@ -286,7 +288,7 @@ img {
 }
 
 .membercard {
-  font-size: 20px;
+  font-size: 25px;
   margin: 30px;
 }
 
@@ -300,6 +302,7 @@ img {
 
 .memberbutton {
   margin: 25px 0;
+
 }
 
 .memberbutton:hover {
@@ -319,9 +322,9 @@ img {
 
 button {
   background-color: #e8e5e480;
-  border-radius: 10%;
+  border-radius: 10px;
   border: none;
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-family: "Tenor Sans", sans-serif;
 }
 
@@ -365,6 +368,9 @@ footer {
 footer ul {
   list-style: none;
 }
+
+/*MEDIA QUERIES BELOW*/
+
 /*Tablet View*/
 @media (min-width: 1000px) and (max-width: 1200px){
   .second-title {
@@ -424,8 +430,11 @@ max-width: 250px;
   width: 300px;
 }
 .membercard {
-  font-size: 15px;
-  margin: 0;
+  font-size: 25px;
+  margin: 15px;
+}
+.memberbutton {
+font-size: 13px;
 }
 .section3 {
   height: 40vh;
@@ -434,16 +443,20 @@ max-width: 250px;
 }
 
 /* smaller tablet*/
-  @media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 750px) and (max-width: 999px) {
+
+  .nav-bar {
+  display: none;
+}
+
+.card {
+  max-width: 250px;
+  max-height: 350px;
+}
    
-    .card {
-    max-width: 250px;
-    max-height: 350px;
-   }
-   
-   .card img { 
-    max-width: 100%;
-  }
+.card img { 
+  max-width: 100%;
+}
 
 .paragraph{
   display: flex;
@@ -451,26 +464,38 @@ max-width: 250px;
   align-items: center;
 }
 
+.section2-1 {
+  margin-top: 150px;
+}
+
 .card2 {
-  margin: 50px 0px;
-  width: 300px;
-  height: 450px;
+  margin: 40px 0;
+  width: 200px;
+  height: 300px;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: 0.3s;
   border-radius: 5%;
 }
+
 .card2:hover{
-  width: 300px;
-  height: 450px;
+  width: 200px;
+  height: 300px;
   background-size: cover;
 }
 
 .whyurban p {
-  font-size: 20px;
-}
-
-.whyurban h2 {
+  font-size: 18px;
   text-align: center;
 }
+.whyurban h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .membership_section {
   display: flex;
   flex-direction: column;
@@ -481,5 +506,48 @@ max-width: 250px;
   min-width: 350px;
   margin: 25px;
 }
+.memberbutton {
+  font-size: 15px;
+  margin: 45px;
+}
+footer {
+  margin: 0px;
+}
+}
+/*MOBILE RESPONSIVENESS*/
+@media (max-width: 749px){
+.card2 {
+  border: solid red 5px;
+}
+.nav-bar {
+  display: none;
+}
+.main-title {
+  font-size: 75px;
+  margin-bottom: 25px;
+}
+.second-title {
+  font-size: 40px;
+}
+.additional-menu {
+  display: flex;
+  flex-direction: column;
+}
+.btn_1 {
+  border-radius: 10px;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px;
+}
+.card {
+  max-width: 200px;
+  max-height: 350px;
+}
+   
+.card img { 
+  max-width: 100%;
+}
 
-  }
+}
