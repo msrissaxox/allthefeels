@@ -237,7 +237,6 @@ img {
   margin-bottom: 50px;
 }
 
-
 .card2:hover {
   width: 350px;
   height: 500px;
@@ -384,10 +383,6 @@ footer ul {
     font-size: 40px;
   }
 
-.topnav {
-  display: none;
-}
-
 .flex-1 {
   display: flex;
   align-items: center;
@@ -456,13 +451,11 @@ footer ul {
 }
 
 /* smaller tablet*/
-@media (min-width: 750px) and (max-width: 999px) {
+@media (min-width: 769px) and (max-width: 999px) {
 
-.nav-bar {
-  display: none;
+.nav-bar li {
+  font-size: 24.5px;
 }
-
-
 
 .card {
   max-width: 250px;
@@ -503,12 +496,13 @@ footer ul {
 }
 
 .whyurban p {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
+
 .whyurban h2 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .membership_section {
@@ -527,22 +521,80 @@ footer ul {
   font-size: 15px;
   margin: 45px;
 }
+
 footer {
   margin: 0px;
 }
 }
 /*MOBILE RESPONSIVENESS*/
-@media (max-width: 749px){
+@media (max-width: 768px){
 
-.nav-bar {
+.topnav {
+  overflow: hidden;
+  background-color: #bad4aac1;
+  position: relative;
+}
+  
+.topnav #myLinks {
   display: none;
 }
+  
+.topnav a {
+  float: left;
+  color: black;
+  padding: 15px 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+  
+.topnav a.icon {
+  float: right;
+}
+  
+.topnav a:hover {
+  background-color: #bad4aac1;
+  color: black;
+}
+  
+.active {
+  background-color: #9fb392;
+  color: black;
+}
+  
+.topnav {
+  display: flex; /* Change display to flex for mobile view */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Align vertically */
+  /* background-color: #bad4aac1; Set background color */
+  padding: 1px; /* Add padding for mobile view */
+  color: black;
+}
+    
+.nav-bar {
+  display: none; /* Hide desktop navigation on mobile */
+}
+
+.inline {
+  font-size: 9px;
+}
+
+footer p {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+footer .ms-3 {
+  display: inline-block;
+  vertical-align:top;
+}
+
 .main-title {
   font-size: 60px;
   margin-bottom: 25px;
 }
 .second-title {
   font-size: 30px;
+  padding: 10px;
 }
 .additional-menu {
   display: flex;
@@ -572,8 +624,13 @@ footer {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  height: 800px;
+  height: 1000px;
+  margin-top: 50px;
+  padding-top: 150px;
+  padding-bottom:120px;
+
 }
+
 .whyurban p {
   font-size: 18px;
 }
@@ -603,7 +660,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .member {
@@ -611,66 +668,11 @@ footer {
   margin: 25px;
   padding: 10px;
 }
+
 .memberbutton {
   font-size: 12px;
   margin: 20px;
 }
-
-
-
-@media screen and (max-width: 768px) {
-
-  body {
-    font-family: "Tenor Sans", sans-serif;
-  }
-  
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #bad4aac1;
-    position: relative;
-  }
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    float: left;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .topnav a.icon {
-    float: right;
-  }
-  
-  .topnav a:hover {
-    background-color: #bad4aac1;
-    color: black;
-  }
-  
-  .active {
-    background-color: #9fb392;
-    color: black;
-  }
-  
-  .topnav {
-      display: flex; /* Change display to flex for mobile view */
-      justify-content: space-between; /* Space between elements */
-      align-items: center; /* Align vertically */
-      /* background-color: #bad4aac1; Set background color */
-      padding: 9px; /* Add padding for mobile view */
-      color: black;
-    }
-    
-    .nav-bar {
-      display: none; /* Hide desktop navigation on mobile */
-    }
-  .inline {
-    font-size: smaller;
-  }
-  }
 }
+
+
