@@ -522,6 +522,10 @@ footer ul {
   margin: 45px;
 }
 
+.membertext {
+  font-size: 16px;
+}
+
 footer {
   margin: 0px;
 }
