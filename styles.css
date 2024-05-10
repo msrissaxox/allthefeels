@@ -1,3 +1,8 @@
+
+:root {
+  --main-text: #32451A;
+ 
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +16,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #D90368;
+  color: var(--main-text);
 }
 
 
@@ -51,23 +56,23 @@ main {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/049/original/Untitled_design_%282%29.png?1715300623") fixed; /* Optional: prevent repeating image */
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
   background-size: cover;
   width: 100vw;
 }
 
 .main-title {
   font-size: 100px;
-  color: #D90368;
+  color: var(--main-text);
 }
 
 .second-title {
   font-size: 50px;
-  color: #D90368;
+  color: var(--main-text);
 }
 
 .third-title {
-  color: #D90368;
+  color: var(--main-text);
 }
 
 .section2-1 {
@@ -103,7 +108,7 @@ main {
 
 .inline {
   display: inline-block;
-  color: #566246;
+  color: var(--main-text);
   font-weight:bolder;
 }
 
@@ -387,7 +392,7 @@ ul > .ms-3{
 @media (min-width: 1000px) and (max-width: 1200px){
 
   .section1 {
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/049/original/Untitled_design_%282%29.png?1715300623") no-repeat fixed; /* Optional: prevent repeating image */
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
     background-size: cover;
     width: 100vw; 
     background-position: center;
@@ -475,7 +480,7 @@ ul > .ms-3{
 @media (min-width: 769px) and (max-width: 999px) {
 
   .section1 {
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/049/original/Untitled_design_%282%29.png?1715300623") rgba(0, 0, 0, 0.5) no-repeat fixed; /* Optional: prevent repeating image */
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
     background-size: cover;
     width: 100vw;
     background-position: center;
@@ -577,7 +582,7 @@ footer {
   
 .topnav a {
   float: left;
-  color: black;
+  color: var(--main-text);
   padding: 15px 10px;
   text-decoration: none;
   font-size: 13px;
