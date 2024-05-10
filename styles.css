@@ -6,6 +6,7 @@
 html {
   font-family: "Tenor Sans", sans-serif;
     scroll-behavior: smooth;
+    background-color: #F6F7F2;
   }
 
 a {
@@ -32,9 +33,16 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: large;
 }
 
+.nav-bar li {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+main {
+  background-color: #F6F7F2;
+}
 .section1 {
   display: flex;
   align-content: center;
@@ -43,25 +51,23 @@ a {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background-color: #f0f0f0;
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/265/original/pexels-visualsbysade-1042177.jpg?1714651723") rgba(0, 0, 0, 0.5) no-repeat fixed; /* Optional: prevent repeating image */
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/049/original/Untitled_design_%282%29.png?1715300623") fixed; /* Optional: prevent repeating image */
   background-size: cover;
-  /* width: 100vw; */
-  background-position: center;
+  width: 100vw;
 }
 
 .main-title {
   font-size: 100px;
-  color: #ffb703;
+  color: #D90368;
 }
 
 .second-title {
   font-size: 50px;
-  color: #ffb703;
+  color: #D90368;
 }
 
 .third-title {
-  color: #ffb703;
+  color: #F3F7F0;
 }
 
 .section2-1 {
@@ -70,7 +76,7 @@ a {
   margin: 100px 0px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-
+  background-color: #F6F7F2;
   /* justify-content: space-evenly; */
   justify-items: center;
   align-content: space-evenly;
@@ -78,7 +84,7 @@ a {
 }
 
 .btn_1 {
-  background-color: #ffb703;
+  background-color: #566246;;
   border: none;
   border-radius: 10%;
   color: white;
@@ -97,7 +103,7 @@ a {
 
 .inline {
   display: inline-block;
-  color: #ffb703;
+  color: #566246;;
   font-weight:bolder;
 }
 
@@ -204,6 +210,7 @@ img {
   display: flex; 
   justify-content: center;
   width: 100%;
+  background-color: #F6F7F2;
 }
 
 .paragraph {
@@ -244,16 +251,6 @@ img {
   background-size: contain;
 }
 
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 50px, 50px;
-  grid-gap: 5px;
-  height: 100%;
-  justify-content: center;
-}
-
 .img_gallery{
   display: flex;
   justify-content: center;
@@ -268,6 +265,7 @@ img {
   align-content: center;
   margin: 0 auto;
   column-gap: 50px;
+  background-color: #F6F7F2;
 }
 
 .member {
@@ -284,12 +282,12 @@ img {
 } 
 
 .member h1{
-  background-color: #ffb80359;
+  background-color: #566246;;
   width: 100%;
 }
 
 .member:hover h1{
-  background-color: #ffb703;
+  background-color: #566246;;
 }
 
 .membercard {
@@ -312,7 +310,7 @@ img {
 
 .memberbutton:hover {
   transform: scale(1.1);
-  background-color: #ffb703;
+  background-color: #566246;
   transition: transform 0.8s cubic-bezier(.24,.29,.44,.14);
 }
 
@@ -323,6 +321,7 @@ img {
   align-items: center;
   margin: 30px;
   height: 50vh;
+  background-color: #F6F7F2;
 }
 
 button {
@@ -378,6 +377,15 @@ footer ul {
 
 /*Tablet View*/
 @media (min-width: 1000px) and (max-width: 1200px){
+
+  .section1 {
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/049/original/Untitled_design_%282%29.png?1715300623") no-repeat fixed; /* Optional: prevent repeating image */
+    background-size: cover;
+    width: 100vw; 
+    background-position: center;
+  }
+
+
   .second-title {
     margin: 0px 10px;
     font-size: 40px;
@@ -458,6 +466,14 @@ footer ul {
 /* smaller tablet*/
 @media (min-width: 769px) and (max-width: 999px) {
 
+  .section1 {
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/049/original/Untitled_design_%282%29.png?1715300623") rgba(0, 0, 0, 0.5) no-repeat fixed; /* Optional: prevent repeating image */
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+  }
+
+
 .nav-bar li {
   font-size: 24.5px;
 }
@@ -537,7 +553,10 @@ footer {
 }
 /*MOBILE RESPONSIVENESS*/
 @media (max-width: 768px){
+  .section1 {
 
+  }
+  
 .topnav {
   overflow: hidden;
   background-color: #bad4aac1;
