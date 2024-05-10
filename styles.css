@@ -477,7 +477,7 @@ ul > .ms-3{
 }
 
 /* smaller tablet*/
-@media (min-width: 769px) and (max-width: 999px) {
+@media (min-width: 769px) and (max-width: 1025px) {
 
   .section1 {
     background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
@@ -490,7 +490,9 @@ ul > .ms-3{
 .nav-bar li {
   font-size: 24.5px;
 }
-
+.btn_1 {
+  font-size: 25px;
+}
 .card {
   max-width: 250px;
   max-height: 350px;
@@ -530,13 +532,15 @@ ul > .ms-3{
 }
 
 .whyurban p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
 .whyurban h2 {
   text-align: center;
   margin-top: 65px;
+  size: 70px;
+  font-weight: bold;
 }
 
 .membership_section {
@@ -566,9 +570,6 @@ footer {
 }
 /*MOBILE RESPONSIVENESS*/
 @media (max-width: 768px){
-  .section1 {
-
-  }
   
 .topnav {
   overflow: hidden;
@@ -673,11 +674,13 @@ footer .ms-3 {
 }
 
 .whyurban p {
-  font-size: 18px;
+  font-size: 17px;
 }
 .whyurban p, h2 {
   text-align: center;
 }
+
+
 .card2 {
   max-width: 200px;
   min-height: 200px;
