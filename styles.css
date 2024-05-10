@@ -56,7 +56,7 @@ main {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") 100% fixed;
   background-size: cover;
   width: 100vw;
 }
@@ -399,8 +399,7 @@ ul > .ms-3{
     align-items: center;
     text-align: center;
     height: 100vh;
-    width: 100vw;
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/055/original/1000.png?1715307098") fixed;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/055/original/1000.png?1715307098") 100% fixed;
     background-size: cover;
     background-position: center;
   }
@@ -495,8 +494,7 @@ ul > .ms-3{
     align-items: center;
     text-align: center;
     height: 100vh;
-    width: 100vw;
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/054/original/769.png?1715307087") fixed;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/054/original/769.png?1715307087") 100% fixed;
     background-size: cover;
     background-position: center;
   }
@@ -596,9 +594,8 @@ footer {
   align-items: center;
   text-align: center;
   height: 100vh;
-  width: 100vw;
 
-  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/053/original/768.png?1715307079") fixed;
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/053/original/768.png?1715307079") 100% fixed;
   background-size: cover;
 } 
 
@@ -762,7 +759,8 @@ footer .ms-3 {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/059/original/Untitled_design_%284%29.png?1715310371") fixed;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/059/original/Untitled_design_%284%29.png?1715310371") 100% no-repeat fixed;
+   
     background-size: cover;
   } 
   .main-title {
