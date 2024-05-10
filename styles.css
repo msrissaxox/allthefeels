@@ -11,7 +11,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #D90368;
 }
 
 
@@ -67,7 +67,7 @@ main {
 }
 
 .third-title {
-  color: #F3F7F0;
+  color: #D90368;
 }
 
 .section2-1 {
@@ -84,7 +84,7 @@ main {
 }
 
 .btn_1 {
-  background-color: #566246;;
+  background-color: #566246;
   border: none;
   border-radius: 10%;
   color: white;
@@ -92,7 +92,7 @@ main {
   text-align: center;
   font-size: 16px;
   margin: 4px 5px;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: 0.3s;
 }
 
@@ -103,7 +103,7 @@ main {
 
 .inline {
   display: inline-block;
-  color: #566246;;
+  color: #566246;
   font-weight:bolder;
 }
 
@@ -282,17 +282,19 @@ img {
 } 
 
 .member h1{
-  background-color: #566246;;
+  background-color: #024e0a9f;
   width: 100%;
+  color: white;
 }
 
 .member:hover h1{
-  background-color: #566246;;
+  background-color: #026b0d;
 }
 
 .membercard {
   font-size: 25px;
   margin: 30px;
+  font-weight: bolder;
 }
 
 
@@ -310,7 +312,9 @@ img {
 
 .memberbutton:hover {
   transform: scale(1.1);
-  background-color: #566246;
+  background-color: #026b0d;
+  color: white;
+  font-weight: bold;
   transition: transform 0.8s cubic-bezier(.24,.29,.44,.14);
 }
 
@@ -371,6 +375,10 @@ footer {
 
 footer ul {
   list-style: none;
+}
+
+ul > .ms-3{
+  color: black;
 }
 
 /*MEDIA QUERIES BELOW*/
