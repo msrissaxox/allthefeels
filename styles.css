@@ -759,13 +759,14 @@ footer .ms-3 {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/059/original/Untitled_design_%284%29.png?1715310371") fixed;
-    background-size: cover;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/123/original/mobile.png?1715383559") no-repeat fixed;
+    background-size: contain;
+    background-position: center;
   } 
-  
+
   .main-title {
     font-size: 50px;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 .additional-menu {
   display: flex;
