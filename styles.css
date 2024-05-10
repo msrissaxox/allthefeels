@@ -312,7 +312,7 @@ img {
 
 .memberbutton {
   margin: 25px 0;
-
+  color: black;
 }
 
 .memberbutton:hover {
@@ -392,9 +392,8 @@ ul > .ms-3{
 @media (min-width: 1000px) and (max-width: 1200px){
 
   .section1 {
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/055/original/1000.png?1715307098") fixed;
     background-size: cover;
-    width: 100vw; 
     background-position: center;
   }
 
@@ -467,6 +466,7 @@ ul > .ms-3{
 
 .memberbutton {
   font-size: 13px;
+  color: black;
 }
 .section3 {
   height: 40vh;
@@ -480,9 +480,8 @@ ul > .ms-3{
 @media (min-width: 769px) and (max-width: 1025px) {
 
   .section1 {
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/051/original/Untitled_design_%283%29.png?1715302540") fixed;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/054/original/769.png?1715307087") fixed;
     background-size: cover;
-    width: 100vw;
     background-position: center;
   }
 
@@ -558,6 +557,7 @@ ul > .ms-3{
 .memberbutton {
   font-size: 15px;
   margin: 45px;
+  color: black;
 }
 
 .membertext {
@@ -571,6 +571,12 @@ footer {
 /*MOBILE RESPONSIVENESS*/
 @media (max-width: 768px){
   
+
+ .section1 {
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/053/original/768.png?1715307079") fixed;
+  background-size: cover;
+} 
+
 .topnav {
   overflow: hidden;
   background-color: #bad4aac1;
@@ -716,6 +722,30 @@ footer .ms-3 {
 .memberbutton {
   font-size: 12px;
   margin: 20px;
+  color: black;
+}
+}
+
+@media (min-width: 450px) and (max-width: 700px){
+
+
+  .section1 {
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/053/original/768.png?1715307079") fixed;
+    background-size: cover;
+  } 
+  .main-title {
+    font-size: 50px;
+    margin-top: 150px;
+  }
+.additional-menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.memberbutton{
+  color: black;
 }
 }
 
