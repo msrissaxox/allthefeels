@@ -759,8 +759,8 @@ footer .ms-3 {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/123/original/mobile.png?1715383559") no-repeat fixed;
-    background-size: contain;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/059/original/Untitled_design_%284%29.png?1715310371") no-repeat fixed;
+    background-size: cover;
     background-position: center;
   } 
 
