@@ -44,9 +44,6 @@ a {
   font-size: 20px;
 }
 
-main {
-  background-color: #F6F7F2;
-}
 
 .section1 {
   display: flex;
@@ -60,6 +57,8 @@ main {
   background-size: cover;
   width: 100vw;
 }
+
+
 
 .main-title {
   font-size: 100px;
@@ -539,10 +538,16 @@ ul > .ms-3{
   .section1 {
     width: 100vw;
     height: 100vh;
-    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/054/original/769.png?1715307087") fixed;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/055/original/1000.png?1715307098") fixed;
     background-size: cover;
     background-position: center;
-  }
+/* background: rgb(139,193,159);
+background: -moz-linear-gradient(90deg, rgba(139,193,159,1) 0%, rgba(186,212,170,0.8674063375350141) 45%);
+background: -webkit-linear-gradient(90deg, rgba(139,193,159,1) 0%, rgba(186,212,170,0.8674063375350141) 45%);
+background: linear-gradient(90deg, rgba(139,193,159,1) 0%, rgba(186,212,170,0.8674063375350141) 45%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8bc19f",endColorstr="#bad4aa",GradientType=1);
+  } */
+}
 
 .nav-bar li {
   font-size: 24.5px;
@@ -630,11 +635,24 @@ footer {
 }
 /*MOBILE*/
 @media only screen and (max-width: 700px){
-  .section1 {
+  /* .section1 {
     height: 100vh;
     background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/053/original/768.png?1715307079") no-repeat fixed;
     background-size: cover;
-  } 
+  }  */
+
+  .section1 {
+    height: 100vh;
+    background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/055/original/1000.png?1715307098") fixed;
+    background-size: cover;
+    background-position: center;
+  }
+/* background: rgb(139,193,159);
+background: -moz-linear-gradient(90deg, rgba(139,193,159,1) 0%, rgba(186,212,170,0.8674063375350141) 45%);
+background: -webkit-linear-gradient(90deg, rgba(139,193,159,1) 0%, rgba(186,212,170,0.8674063375350141) 45%);
+background: linear-gradient(90deg, rgba(139,193,159,1) 0%, rgba(186,212,170,0.8674063375350141) 45%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8bc19f",endColorstr="#bad4aa",GradientType=1);  
+  }   */
 
   .main-title {
     font-size: 70px;
