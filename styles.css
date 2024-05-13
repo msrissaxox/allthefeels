@@ -91,7 +91,6 @@ main {
 .btn_1 {
   background-color: #566246;
   border: none;
-  border-radius: 10%;
   color: white;
   padding: 6px 30px;
   text-align: center;
@@ -99,6 +98,9 @@ main {
   margin: 4px 5px;
   opacity: 0.8;
   transition: 0.3s;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
 }
 
 .btn_1:hover {
@@ -301,7 +303,6 @@ img {
   font-weight: bolder;
 }
 
-
 .member:hover {
   transform: translateY(-25px); 
   transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -422,10 +423,12 @@ ul > .ms-3{
   margin-top: 25px;
   font-size: 50px;
 }
+
 .paragraph {
  height: 100%;
   margin-bottom: 150px;
 }
+
 .whyurban p {
   font-size: 15.5px;
   text-align: center;
@@ -460,10 +463,12 @@ ul > .ms-3{
   font-size: 13px;
   color: black;
 }
+
 .section3 {
   height: 40vh;
   margin: 100px;
 }
+
 .membertext {
   font-size: 16px;
 }
@@ -478,6 +483,10 @@ ul > .ms-3{
     background-position: center;
   }
 
+ .btn_1 {
+  font-size: 25px;
+}
+
   .card {
     max-width: 200px;
   }
@@ -486,11 +495,19 @@ ul > .ms-3{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    height: 75vh;
+    height: 100%;
+    padding: 100px;
   }
+
+  .paragraph p {
+    text-align: center;
+
+  }
+
   .card2{
     display: none;
   }
+
   .membership_section {
     display: flex;
     flex-direction: column;
@@ -500,17 +517,19 @@ ul > .ms-3{
   .member {
     min-width: 350px;
     margin: 25px;
-    padding: 20px;
+    padding: 0 20px;
     font-size: 14px;
+    height: 100%;
   }
+
   .memberbutton {
-    font-size: 15px;
+    font-size: 18px;
     margin: 45px;
     color: black;
   }
   
   .membertext {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 /*MOBILE RESPONSIVENESS*/
@@ -528,9 +547,11 @@ ul > .ms-3{
 .nav-bar li {
   font-size: 24.5px;
 }
+
 .btn_1 {
   font-size: 25px;
 }
+
 .card {
   max-width: 250px;
   max-height: 350px;
@@ -550,7 +571,6 @@ ul > .ms-3{
 .section2-1 {
   margin-top: 150px;
 }
-
 
 .whyurban p {
   font-size: 25px;
@@ -573,7 +593,13 @@ ul > .ms-3{
   font-size: 35px;
 }
 
+.membership_section .membercard {
+  font-size: 35px;
+}
 
+.membership_section .membertext {
+  font-size: 25px;
+}
 
 .member {
   min-width: 375px;
@@ -582,8 +608,9 @@ ul > .ms-3{
   font-size: 14px;
   height: 100%;
 }
+
 .memberbutton {
-  font-size: 19px;
+  font-size: 20px;
   margin: 45px;
   color: black;
 }
@@ -591,9 +618,11 @@ ul > .ms-3{
 .membertext {
   font-size: 16px;
 }
+
 .section3 {
   margin: 150px;
 }
+
 footer {
   margin: 0px;
 
@@ -611,6 +640,7 @@ footer {
     font-size: 70px;
     margin: 20px 10px 30px 10px;
   }
+
 .second-title {
   font-size: 35px;
   margin-bottom: 30px;
@@ -689,6 +719,7 @@ footer {
     height: 300px;
     background-size: cover;
   }
+
   .card {
     max-width: 150px;
     max-height: 350px;
@@ -718,9 +749,11 @@ footer {
   .membership_section .membertext {
     font-size: 18px;
   }
+
 .membership_section .memberbutton {
   font-size: 17px;
 }
+
   .card img { 
     max-width: 100%;
   }
@@ -744,5 +777,9 @@ footer {
 
 .flex-1 {
   margin-bottom: 50px;
+}
+
+.footer {
+  font-size: 10px;
 }
   }
